@@ -46,7 +46,7 @@ def save_login_password(password, reg_user):
         with open(LOGIN_PASSWORD, 'a') as file_login_password:  # дозаписываем пару логин-пароль
             file_login_password.write(str(reg_user) + '\n')
             print("Регистрация прошла успешно!")
-    else:  # иначе сообщаем о некорректном пароле
+    else:  # иначе сообщаем о некорректном пароле пользователю
         print("Вы ввели некорректный пароль!")
 
 
